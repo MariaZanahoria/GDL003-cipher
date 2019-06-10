@@ -15,10 +15,39 @@
   </header>
 <!-- <Indicaciones>--> 
   <div id="code" class="code">
-    <br>
       <h3>¿Deseas enviarle mensajes secretos a tu pareja o amigos y no sabes como?, estas en el lugar indicado!</h3>
       <h4>Ingresa el texto en el recuadro y selecciona el desplazamiento que deseas aplicar, da clic en el boto de Codificar y obten tu mensaje secreto!</h4>
-    <br><br>   
+    <br><br>
+<!-- <Block de notas Cifrado>-->    
+  <div class="blockTextoC">
+    <label for="textoC"> Pon aqui tu mensaje!: </label>
+  <input type="text" id="textoC" class="entradaTexto" placeholder="Introduce aqui el texto" maxlenght="90" size=100 name="mensajeSecreto">
+  </div>
+  <br>
+<!-- <Seleccionar desplazamiento>--> 
+  <label>Elije el numero de desplazamiento:</label>
+  <select name="dezplazamiento" id="desplazamientoC">
+     <!-- <<option value="1">0</option>>--> 
+      <option value="1">1</option>
+      <option value="2">2</option>  
+      <option value="3">3</option>  
+      <option value="4">4</option>  
+      <option value="5">5</option>  
+      <option value="6">6</option>  
+      <option value="7">7</option>  
+      <option value="8">8</option>  
+      <option value="9">9</option>  
+      <option value="10">10</option>  
+  </select>
+  <br><br>
+<!-- <Boton Codificador>-->    
+  <div id="buttonCode">
+    <button class= "button" id=botonCodificar>¡Codificar!</button> 
+  </div>
+  <br>
+<!-- <Texto Codificado>--> 
+  <label id="showC" class="resultsC">jndj</label>
+  <br><br>       
   <script src="app.js"></script>
   <script src="cipher.js"></script>
 </body>
