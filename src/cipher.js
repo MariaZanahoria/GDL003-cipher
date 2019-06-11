@@ -1,5 +1,4 @@
 window.cipher = {
-  
 // Funcion de cambiar el texto a ASCII
 encodeAscii = (string) => {
   let caracteres = [];
@@ -10,7 +9,6 @@ encodeAscii = (string) => {
 } 
 return caracteres
 },
-
 // Funncion de cambiar el arreglo ASCII apicando desplazamiento
 cipherText = (array, offset) => {
   let cipher = [];
@@ -20,5 +18,13 @@ cipherText = (array, offset) => {
 }
 return cipher
 },
-
+// Funcion de convertir un arreglo ASCII a un string
+convertAsciiToString = (array) => {
+  let encodedString = "";
+  for(let c = 0; c < array.length; c++){
+  let char = String.fromCharCode(array[c]);
+    encodedString += char;
+    }
+return encodedString
+},
 }
