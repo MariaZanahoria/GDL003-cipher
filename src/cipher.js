@@ -26,5 +26,5 @@ convertAsciiToString = (array) => {
     encodedString += char;
     }
 return encodedString
-},
+}
 }
