@@ -47,8 +47,38 @@
   <br>
 <!-- <Texto Codificado>--> 
   <label id="showC" class="resultsC">jndj</label>
-  <br><br>       
-  <script src="app.js"></script>
-  <script src="cipher.js"></script>
-</body>
+  <br><br>
+<!-- <Block de notas Decifrado>-->    
+  <div class="blockTextoD">
+    <label for="textoD"> Pon aqui tu mensaje!: </label>
+    <input type="text" id="textoD" class="entradaDeTexto" placeholder="Introduce aqui el texto" maxlenght="90" size=100 name="mensajeSecreto">
+    </div>
+    <br>
+<!-- <Seleccionar desplazamiento>--> 
+    <label>Elije el numero de desplazamiento:</label>
+    <select name="dezplazamiento" id="desplazamientoD">
+       <!-- <<option value="1">0</option>>--> 
+       <option value="1">1</option>
+        <option value="2">2</option>  
+        <option value="3">3</option>  
+        <option value="4">4</option>  
+        <option value="5">5</option>  
+        <option value="6">6</option>  
+        <option value="7">7</option>  
+        <option value="8">8</option>  
+        <option value="9">9</option>  
+        <option value="10">10</option>  
+    </select>
+    <br><br>
+<!-- <Boton Codificador>-->    
+    <div id="buttonDecode">
+      <button class= "button" id=botonDecodificar>¡Decodificar!</button> 
+    </div>
+<!-- <Texto Codificado>--> 
+    <label id="showD" class="resultsD">kcnsjf</label>
+    <br><br>
+    </div>  
+    <script src="app.js"></script>
+    <script src="cipher.js"></script>
+  </body>
 </html>
