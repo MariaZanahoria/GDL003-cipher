@@ -10,4 +10,15 @@ encodeAscii = (string) => {
 } 
 return caracteres
 },
+
+// Funncion de cambiar el arreglo ASCII apicando desplazamiento
+cipherText = (array, offset) => {
+  let cipher = [];
+  for (let c = 0; c <array.length; c++){
+  let cifrado = (array[c] - 65 + offset)%26+65;
+    cipher[c]=parseInt(cifrado);
+}
+return cipher
+},
+
 }
