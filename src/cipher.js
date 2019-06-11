@@ -1,4 +1,5 @@
 window.cipher = {
+  
 // Funcion de cambiar el texto a ASCII
 encodeAscii = (string) => {
   let caracteres = [];
