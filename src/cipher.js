@@ -24,7 +24,16 @@ convertAsciiToString = (array) => {
   for(let c = 0; c < array.length; c++){
   let char = String.fromCharCode(array[c]);
     encodedString += char;
-    }
+}
 return encodedString
+},
+// Funcion de decodificar aplicando desplazamiento
+cipherTextDec = (array, offset) => {
+  let cipherDec = [];
+  for (let i = 0; i <array.length; i++){
+  let cifradoDec = (array[i] - offset - 65)%26+65;
+    cipherDec[i]=parseInt(cifradoDec);
+}
+return cipherDec
 }
 }
