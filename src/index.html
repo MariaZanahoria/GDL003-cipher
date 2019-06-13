@@ -18,22 +18,21 @@
       <h3>¿Deseas enviarle mensajes secretos a tu pareja o amigos y no sabes como?</h3> 
       <h4>¡Estas en el lugar indicado!</h4>
       <h5>Ingresa el texto en el recuadro y selecciona el desplazamiento que deseas aplicar (según, el numero que escojas, es el numero de lugares que el abecedario de desplazara a la derecha), da clic en el boto de Codificar y obten tu mensaje secreto!</h5>
+    </div>  
 <!-- <Block de notas Cifrado>-->    
     <div class="blockTextoC">
       <label for="textoC"> Pon aqui tu mensaje!: </label>
     <input type="text" id="textoC" class="entradaTexto" placeholder="Introduce aqui el texto" name="mensajeSecreto">
     </div>
-    <br>
 <!-- <Seleccionar desplazamiento>--> 
     <label>Elije el numero de desplazamiento:</label>
     <input type="number" id="offset" placeholder="Desplazamiento"> 
-    <br><br>
-<!-- <Boton Codificador>-->    
+<!-- <Boton Codificador>-->
+    <div id="buttonEncode">  
     <button class= "button" id="botonCodificar">¡Codificar!</button> <input type = "reset" value="¡De nuevo!" id="done"> 
-    <br>
+    </div>
 <!-- <Texto Codificado>--> 
-    <p id="showC" class="resultsC"></p>
-    <br><br>
+    <p id="showC" class="resultsC">Ve aqui el resultado</p>
 <!-- <Indicaciones>-->    
     <h6>¿Deseas decifrar un mensaje?</h6>
 <!-- <Block de notas Decifrado>-->    
@@ -41,19 +40,15 @@
     <label for="textoD"> Pon aqui tu mensaje!: </label>
     <input type="text" id="textoD" class="entradaDeTexto" placeholder="Introduce aqui el texto" name="mensajeSecreto">
     </div>
-    <br>
 <!-- <Seleccionar desplazamiento>--> 
     <label>Elije el numero de desplazamiento:</label>
     <input type="number" id="offsetD" placeholder="Desplazamiento"> 
-    <br><br>
 <!-- <Boton Codificador>-->    
     <div id="buttonDecode">
       <button class= "button" id="botonDecodificar">¡Decodificar!</button> <input type = "reset" value="¡De Nuevo!" id="doneD"> 
     </div>
 <!-- <Texto Codificado>--> 
-    <p id="showD" class="resultsD"></p>
-    <br><br>
-    </div>
+    <p id="showD" class="resultsD">Ve aqui el resultado</p>
     <script src="index.js"></script>
     <script src="cipher.js"></script>
   </body>
