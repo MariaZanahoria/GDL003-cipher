@@ -4,17 +4,32 @@ let offset = document.getElementById("offset");
 
 
 botonCodificar.addEventListener("click",()=>{
-    let codedText = window.cipher.encode(textToEncode.value, offset.value);
-    console.log(codedText)
+    let codedText = window.cipher.encode(offset.value, textToEncode.value);
     document.getElementById("showC").innerHTML = codedText;
 });
 
-/*const resultLabelD = document.getElementById("showD");
+let textToDecode = document.getElementById("textoD");
+let botonDecodificar = document.getElementById("botonDecodificar");
+let offsetD = document.getElementById("offsetD");
 
-document.getElementById("botonDecodificar").addEventListener("click", function(){
-    const asciiText = window.cipher.encodeAscii();
-    const desplazamientoD = document.getElementById("desplazamientoD").value;
-    const cipherTextDec = window.cipher.cipherTextDec(asciiText,parseInt(desplazamientoD));
-    const codedTextDec = window.cipher.convertAsciiToString(cipherTextDec);
-    resultLabelD.innerHTML  = codedTextDec;
-}); */
+botonDecodificar.addEventListener("click", ()=>{
+    let codedTextDec = window.cipher.decode(offsetD.value, textToDecode.value);
+    document.getElementById("showD").innerHTML  = codedTextDec;
+});
+
+let botonResetE = document.getElementById("done");
+
+botonResetE.addEventListener("click", ()=>{
+    textToEncode.value = "";
+    offset.value = "";
+    showC.innerHTML = "";
+});
+
+let botonResetD = document.getElementById("doneD");
+
+botonResetD.addEventListener("click", ()=>{
+    textToDecode.value = "";
+    offsetD.value = "";
+    showD.innerHTML = "";
+});
+    
