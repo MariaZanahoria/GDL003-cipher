@@ -4,7 +4,7 @@ window.cipher = {
       let encodedString = "";
       for (let c = 0; c < textToEncode.length; c++){
       let caracteres = textToEncode.charCodeAt(c); 
-// Funcion de no decodificar signos
+// Funcion de no codificar signos ni numeros
       if (caracteres>=32 && caracteres<=64 || caracteres>=91 && caracteres<=96 || caracteres>=123 && caracteres<=255){
       let space = String.fromCharCode(caracteres);
         encodedString += space;
@@ -31,7 +31,7 @@ window.cipher = {
       let decodedString = "";
       for (let d = 0; d < textToDecode.length; d++){
       let textDecode = textToDecode.charCodeAt(d); 
-// Funcion de cambiar el arreglo ASCII apicando desplazamiento
+// Funcion de no decodificar signos ni numeros
       if (textDecode>=32 && textDecode<=64 || textDecode>=91 && textDecode<=96 || textDecode>=123 && textDecode<=255){
       let spaceD = String.fromCharCode(textDecode);
         decodedString += spaceD;
